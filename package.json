@@ -44,6 +44,6 @@
     "vscode-languageclient": "^3.5.0"
   },
   "dependencies": {
-    "flow-language-server": "git+https://github.com/janicduplessis/flow-language-server.git"
+    "flow-language-server": "^0.2.5"
   }
 }
