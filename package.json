@@ -8,21 +8,14 @@
     "vscode": "^1.19.0"
   },
   "categories": [
-    "Other"
+    "Languages",
+    "Linters"
   ],
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:javascriptreact"
   ],
   "main": "./build/extension",
-  "contributes": {
-    "commands": [
-      {
-        "command": "extension.sayHello",
-        "title": "Hello World"
-      }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run build",
     "build": "babel ./lib --out-dir=./build --source-maps",
@@ -38,7 +31,7 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.6.1",
     "eslint-plugin-flowtype": "^2.40.1",
-    "flow-bin": "^0.61.0",
+    "flow-bin": "^0.66.0",
     "typescript": "^2.6.1",
     "vscode": "^1.1.6",
     "vscode-languageclient": "^3.5.0"
