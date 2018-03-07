@@ -7,14 +7,12 @@
   "engines": {
     "vscode": "^1.19.0"
   },
-  "categories": [
-    "Languages",
-    "Linters"
-  ],
-  "activationEvents": [
-    "onLanguage:javascript",
-    "onLanguage:javascriptreact"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbachhardie/vscode-flow-ls"
+  },
+  "categories": ["Languages", "Linters"],
+  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
   "main": "./build/extension",
   "scripts": {
     "vscode:prepublish": "npm run build",
