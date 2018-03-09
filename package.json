@@ -27,20 +27,20 @@
         "test": "flow && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "@types/mocha": "^2.2.42",
-        "@types/node": "^7.0.43",
-        "babel-cli": "^6.26.0",
-        "babel-eslint": "^8.0.3",
-        "babel-preset-env": "^1.6.1",
-        "babel-preset-flow": "^6.23.0",
-        "eslint": "^4.6.1",
-        "eslint-plugin-flowtype": "^2.40.1",
-        "flow-bin": "^0.66.0",
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.6"
+        "@types/mocha": "2.2.48",
+        "@types/node": "9.4.7",
+        "babel-cli": "6.26.0",
+        "babel-eslint": "8.2.2",
+        "babel-preset-env": "1.6.1",
+        "babel-preset-flow": "6.23.0",
+        "eslint": "4.18.2",
+        "eslint-plugin-flowtype": "2.46.1",
+        "flow-bin": "0.67.1",
+        "typescript": "2.7.2",
+        "vscode": "1.1.12"
     },
     "dependencies": {
-        "flow-language-server": "^0.4.3",
-        "vscode-languageclient": "^3.5.1"
+        "flow-language-server": "0.4.3",
+        "vscode-languageclient": "4.0.0"
     }
 }
