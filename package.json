@@ -1,41 +1,46 @@
 {
-  "name": "flow-ls",
-  "displayName": "FlowJS Type Checking",
-  "description":
-    "Javascript Flow typechecking support using Flow Language Server",
-  "version": "0.0.3",
-  "publisher": "jbachhardie",
-  "engines": {
-    "vscode": "^1.19.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jbachhardie/vscode-flow-ls"
-  },
-  "categories": ["Languages", "Linters"],
-  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
-  "main": "./build/extension",
-  "scripts": {
-    "vscode:prepublish": "npm run build",
-    "build": "babel ./lib --out-dir=./build --source-maps",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "flow && node ./node_modules/vscode/bin/test"
-  },
-  "devDependencies": {
-    "@types/mocha": "2.2.48",
-    "@types/node": "9.4.7",
-    "babel-cli": "6.26.0",
-    "babel-eslint": "8.2.2",
-    "babel-preset-env": "1.6.1",
-    "babel-preset-flow": "6.23.0",
-    "eslint": "4.18.2",
-    "eslint-plugin-flowtype": "2.46.1",
-    "flow-bin": "0.67.1",
-    "typescript": "2.7.2",
-    "vscode": "1.1.12"
-  },
-  "dependencies": {
-    "flow-language-server": "0.4.3",
-    "vscode-languageclient": "4.0.0"
-  }
+    "name": "flow-ls",
+    "displayName": "FlowJS Type Checking",
+    "description": "Javascript Flow typechecking support using Flow Language Server",
+    "version": "0.0.5",
+    "publisher": "jbachhardie",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jbachhardie/vscode-flow-ls"
+    },
+    "categories": [
+        "Languages",
+        "Linters"
+    ],
+    "activationEvents": [
+        "onLanguage:javascript",
+        "onLanguage:javascriptreact"
+    ],
+    "main": "./build/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run build",
+        "build": "babel ./lib --out-dir=./build --source-maps",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "flow && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/mocha": "2.2.48",
+        "@types/node": "9.4.7",
+        "babel-cli": "6.26.0",
+        "babel-eslint": "8.2.2",
+        "babel-preset-env": "1.6.1",
+        "babel-preset-flow": "6.23.0",
+        "eslint": "4.18.2",
+        "eslint-plugin-flowtype": "2.46.1",
+        "flow-bin": "0.67.1",
+        "typescript": "2.7.2",
+        "vscode": "1.1.12"
+    },
+    "dependencies": {
+        "flow-language-server": "0.4.3",
+        "vscode-languageclient": "4.0.0"
+    }
 }
