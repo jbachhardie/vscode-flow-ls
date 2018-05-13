@@ -1,6 +1,6 @@
 {
   "name": "flow-ls",
-  "displayName": "flow-ls",
+  "displayName": "Flow Language Server Client",
   "description": "Javascript Flow typechecking using Flow Language Server",
   "version": "0.1.0",
   "publisher": "jbachhardie",
