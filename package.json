@@ -7,6 +7,13 @@
   "engines": {
     "vscode": "^1.19.0"
   },
+  "author": {
+    "name": "Jae Anne Bach Hardie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbachhardie/vscode-flow-ls.git"
+  },
   "categories": ["Other"],
   "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
   "main": "./build/extension",
