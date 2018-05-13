@@ -2,10 +2,10 @@
   "name": "flow-ls",
   "displayName": "Flow Language Server Client",
   "description": "Javascript Flow typechecking using Flow Language Server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "jbachhardie",
   "engines": {
-    "vscode": "^1.19.0"
+    "vscode": "^1.23.0"
   },
   "author": {
     "name": "Jae Anne Bach Hardie"
