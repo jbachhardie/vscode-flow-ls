@@ -59,14 +59,18 @@ export function activate(context: ExtensionContext) {
     path.join('node_modules', 'flow-language-server', 'lib', 'bin', 'cli.js')
   )
   const debugOptions = { execArgv: ['--nolazy', '--inspect=6009'] }
+  const args = <string[]>workspace.getConfiguration("flow").get('lsArgs');
+  
   const serverOptions: ServerOptions = {
     run: {
       module: serverModule,
+      args,
       transport: TransportKind.ipc
     },
     debug: {
       module: serverModule,
       transport: TransportKind.ipc,
+      args,
       options: debugOptions
     }
   }

@@ -14,9 +14,28 @@
     "type": "git",
     "url": "https://github.com/jbachhardie/vscode-flow-ls.git"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onLanguage:javascript", "onLanguage:javascriptreact"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
+  ],
   "main": "./out/src/extension",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "flow.lsArgs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "Arguments to pass to the flow-language-server"
+        }
+      }
+    }
+  },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
     "compile": "tsc -p ./",
