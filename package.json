@@ -2,7 +2,7 @@
   "name": "flow-ls",
   "displayName": "Flow Language Server Client",
   "description": "Javascript Flow typechecking using Flow Language Server",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "publisher": "jbachhardie",
   "engines": {
     "vscode": "^1.23.0"
@@ -26,7 +26,10 @@
     "configuration": {
       "properties": {
         "flow.flowPath": {
-          "type": ["string", "null"],
+          "type": [
+            "string",
+            "null"
+          ],
           "default": null,
           "description": "An absolute path to a specific flow binary to use for the server"
         },
