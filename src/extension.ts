@@ -59,14 +59,24 @@ export function activate(context: ExtensionContext) {
     path.join('node_modules', 'flow-language-server', 'lib', 'bin', 'cli.js')
   )
   const debugOptions = { execArgv: ['--nolazy', '--inspect=6009'] }
+  const config = workspace.getConfiguration('flow')
+  const flowPath = config.get('flowPath') as string
+  const args = [
+    flowPath === null ? undefined : `--flow-path=${flowPath}`,
+    `--try-flow-bin=${config.get('tryFlowBin')}`,
+    `--no-auto-download=${!config.get('autoDownloadFlow')}`
+  ]
+
   const serverOptions: ServerOptions = {
     run: {
       module: serverModule,
+      args,
       transport: TransportKind.ipc
     },
     debug: {
       module: serverModule,
       transport: TransportKind.ipc,
+      args,
       options: debugOptions
     }
   }
