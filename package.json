@@ -25,13 +25,20 @@
   "contributes": {
     "configuration": {
       "properties": {
-        "flow.lsArgs": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "default": [],
-          "description": "Arguments to pass to the flow-language-server"
+        "flow.flowPath": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "An absolute path to a specific flow binary to use for the server"
+        },
+        "flow.autoDownloadFlow": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically download and manage flow binaries"
+        },
+        "flow.tryFlowBin": {
+          "type": "boolean",
+          "default": false,
+          "description": "Attempt to use flow-bin inside the $PROJECT_ROOT's node_modules directory"
         }
       }
     }
