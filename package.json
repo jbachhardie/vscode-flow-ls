@@ -2,7 +2,7 @@
   "name": "flow-ls",
   "displayName": "Flow Language Server Client",
   "description": "Javascript Flow typechecking using Flow Language Server",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "jbachhardie",
   "engines": {
     "vscode": "^1.23.0"
