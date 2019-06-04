@@ -1,3 +1,5 @@
+**DEPRECATED: [Flow for VSCode](https://github.com/flowtype/flow-for-vscode) has support for the newer Flow LSP since 1.0.0. Use that project instead.**
+
 # FlowJS Type Checking for VSCode using Flow Language Server
 
 Integration of flow language server into vscode. Provides intellisense and
